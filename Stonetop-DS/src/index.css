@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --red: #AB5449;
+  --white: #FAFAFA;
+  --black: #48463E;
+  --blue: #3590F3;
+  --yellow: #E6AF2E;
+}
