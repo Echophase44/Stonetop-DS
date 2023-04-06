@@ -1,0 +1,25 @@
+.home_hero-container{
+  position: relative;
+}
+
+
+.home_hero{
+  height: 85vh;
+  width: 100%;
+}
+
+.home_logo{
+  max-height: 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  filter: invert(94%) sepia(10%) saturate(7291%) hue-rotate(333deg) brightness(94%) contrast(92%);
+}
+
+.home_title{
+  font-size: 2rem;
+  position: absolute;
+  bottom: 10px;
+  right: 85px;
+  color: var(--white)
+}
