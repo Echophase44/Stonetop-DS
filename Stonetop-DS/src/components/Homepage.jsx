@@ -2,6 +2,7 @@ import React from "react";
 import '../styles/homepage.css'
 import Hero from '../assets/mainOffice.jpg'
 import Logo from "../assets/logo.png"
+import WhatWeDo from './section_components/WhatWeDo.jsx'
 
 
 function Homepage() {
@@ -10,12 +11,9 @@ function Homepage() {
       <section className="home_hero-container">
         <img className="home_hero" src={Hero} alt="Office" />
         <img className="home_logo" src={Logo} alt="Company Logo" />
-        <div className="home_title">Stonetop Financial Solutions</div>
+        <div className="home_title">Stonetop Financial</div>
       </section>
-      <section className="home_about-container">
-
-      </section>
-
+      <WhatWeDo />
     </>
   )
 }
