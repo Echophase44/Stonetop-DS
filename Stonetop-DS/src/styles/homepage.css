@@ -38,7 +38,7 @@
 .home_wwd-imgContainer{
   position: relative;
   max-width: 50vw;
-  height: 75vh;
+  height: 60vh;
   text-align: center;
 }
 
@@ -47,20 +47,21 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(72, 70, 62, .2);
+  background-color: rgb(72, 70, 62, .7);
 }
 
 .home-wwd-img{
   object-fit: cover;
   min-width: 50vw;
-  max-height: 75vh;
+  height: 60vh;
 }
 
 .home_wwd-title{
   position: absolute;
-  right: 15px;
-  font-size: 4rem;
+  right: 28%;
+  font-size: 5rem;
   font-weight: 700;
+  color: var(--yellow);
 }
 
 .home_wwd-text{
@@ -71,4 +72,57 @@
   max-width: 50vw;
   font-size: 2rem;
   background-color: var(--white);
+}
+
+/* ######################### About ###################### */
+
+.home_about-main{
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  background-color: var(--yellow);
+}
+
+.home_about-title{
+  padding: 15px;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.home_about-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_about-CardContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.home_about-contentContainer{
+  display: flex;
+  padding: 15px;
+  background-color: var(--white);
+  width: 60vw;
+}
+
+.home_about-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home_about-card > span{
+  font-size: 2rem;
+}
+
+.home_about-card > p{
+  font-size: 1.2rem;
+  max-width: 60vw;
+}
+
+.home_about-img{
+  height: auto;
+  width: 25vw;
+  object-fit: cover;
 }

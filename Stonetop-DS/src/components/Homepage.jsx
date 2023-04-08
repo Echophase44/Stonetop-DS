@@ -3,6 +3,7 @@ import '../styles/homepage.css'
 import Hero from '../assets/mainOffice.jpg'
 import Logo from "../assets/logo.png"
 import WhatWeDo from './section_components/WhatWeDo.jsx'
+import About from './section_components/About.jsx'
 
 
 function Homepage() {
@@ -14,6 +15,7 @@ function Homepage() {
         <div className="home_title">Stonetop Financial</div>
       </section>
       <WhatWeDo />
+      <About />
     </>
   )
 }
