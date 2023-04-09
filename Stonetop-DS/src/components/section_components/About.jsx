@@ -4,7 +4,7 @@ import girlThree from '../../assets/workingGirl3.jpg'
 function About(){
   return(
     <section className="home_about-main">
-      <div className="home_about-section">
+
         <div className="home_about-cardContainer">
           <h2 className="home_about-title">ABOUT</h2>
           <div className="home_about-contentContainer">
@@ -36,7 +36,6 @@ function About(){
         </div>
 
         <img className="home_about-img" src={girlThree} alt="" />
-      </div>
     </section>
   )
 }

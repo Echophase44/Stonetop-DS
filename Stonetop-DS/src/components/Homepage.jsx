@@ -4,6 +4,7 @@ import Hero from '../assets/mainOffice.jpg'
 import Logo from "../assets/logo.png"
 import WhatWeDo from './section_components/WhatWeDo.jsx'
 import About from './section_components/About.jsx'
+import Footer from './section_components/Footer.jsx'
 
 
 function Homepage() {
@@ -16,6 +17,7 @@ function Homepage() {
       </section>
       <WhatWeDo />
       <About />
+      <Footer />
     </>
   )
 }

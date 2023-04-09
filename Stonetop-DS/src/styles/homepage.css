@@ -78,9 +78,10 @@
 
 .home_about-main{
   display: flex;
-  flex-direction: column;
-  height: 75vh;
+  height: 85vh;
   background-color: var(--yellow);
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .home_about-title{
@@ -89,15 +90,11 @@
   text-align: center;
 }
 
-.home_about-section{
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .home_about-cardContainer{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow: hidden;
 }
 
 .home_about-contentContainer{
@@ -106,6 +103,7 @@
   background-color: var(--white);
   width: 60vw;
   border-radius: 5px;
+  margin-left: 30px;
 }
 
 .home_about-card{
@@ -128,4 +126,35 @@
   height: auto;
   width: 28vw;
   object-fit: cover;
+}
+
+
+/* ######################### Footer ###################### */
+
+.footer-main{
+  height: 15vh;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 15px;
+}
+
+.footer-logo{
+  max-height: 35px;
+  width: auto;
+  margin-bottom: 15px;
+  filter: invert(98%) sepia(20%) saturate(7370%) hue-rotate(190deg) brightness(129%) contrast(96%);
+}
+
+.footer-text{
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.footer-privacy{
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--blue);
 }
