@@ -32,12 +32,12 @@
   justify-content: space-evenly;
   border-top: 5px solid var(--blue);
   margin-top: -5px;
-  /* height: 90vh; */
+  height: 60vh;
 }
 
 .home_wwd-imgContainer{
   position: relative;
-  max-width: 50vw;
+  width: 50vw;
   height: 60vh;
   text-align: center;
 }
@@ -52,7 +52,7 @@
 
 .home-wwd-img{
   object-fit: cover;
-  min-width: 50vw;
+  width: 50vw;
   height: 60vh;
 }
 
@@ -72,13 +72,15 @@
   max-width: 50vw;
   font-size: 2rem;
   background-color: var(--white);
+  height: 60vh;
+  overflow-y: hidden;
 }
 
 /* ######################### About ###################### */
 
 .home_about-main{
   display: flex;
-  height: 85vh;
+  height: 100vh;
   background-color: var(--yellow);
   justify-content: space-between;
   gap: 30px;
@@ -94,7 +96,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  overflow: hidden;
 }
 
 .home_about-contentContainer{
@@ -123,8 +124,8 @@
 }
 
 .home_about-img{
-  height: auto;
-  width: 28vw;
+  height: 100%;
+  width: 30vw;
   object-fit: cover;
 }
 
@@ -157,4 +158,9 @@
   font-size: 1.3rem;
   margin-bottom: 15px;
   color: var(--blue);
+}
+
+.footer-privacy:hover{
+  color: var(--red);
+  transition: .3s;
 }

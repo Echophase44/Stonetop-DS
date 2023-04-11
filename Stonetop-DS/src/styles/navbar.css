@@ -2,7 +2,9 @@
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: var(--black);
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .nav_logo-container{
@@ -38,11 +40,13 @@
 
 .nav_links-container > li{
   padding: 5px 10px;
-  border-left: 1px solid var(--red)
+  border-left: 1px solid var(--red);
+  transition: .3s;
 }
 
  .nav_links-container > li:hover{
   background-color: var(--red);
   transition: .3s;
   cursor: pointer;
+  border-radius: 5px 5px 0px 0px;
 }

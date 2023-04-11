@@ -5,11 +5,13 @@ import Logo from "../assets/logo.png"
 import WhatWeDo from './section_components/WhatWeDo.jsx'
 import About from './section_components/About.jsx'
 import Footer from './section_components/Footer.jsx'
+import Navbar from "./Navbar";
 
 
 function Homepage() {
   return (
     <>
+    <Navbar/>
       <section className="home_hero-container">
         <img className="home_hero" src={Hero} alt="Office" />
         <img className="home_logo" src={Logo} alt="Company Logo" />
