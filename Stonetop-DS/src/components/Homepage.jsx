@@ -1,24 +1,23 @@
 import React from "react";
 import '../styles/homepage.css'
-import Hero from '../assets/mainOffice.jpg'
-import Logo from "../assets/logo.png"
+
+import Navbar from "./Navbar";
+import Hero from './section_components/Hero.jsx'
 import WhatWeDo from './section_components/WhatWeDo.jsx'
 import About from './section_components/About.jsx'
+import Contact from './section_components/Contact.jsx'
 import Footer from './section_components/Footer.jsx'
-import Navbar from "./Navbar";
+
 
 
 function Homepage() {
   return (
     <>
     <Navbar/>
-      <section className="home_hero-container">
-        <img className="home_hero" src={Hero} alt="Office" />
-        <img className="home_logo" src={Logo} alt="Company Logo" />
-        <div className="home_title">Stonetop Financial</div>
-      </section>
+      <Hero />
       <WhatWeDo />
       <About />
+      <Contact />
       <Footer />
     </>
   )

@@ -4,7 +4,7 @@
 
 
 .home_hero{
-  height: 89vh;
+  height: 100vh;
   width: 100%;
   object-fit: cover
 }
@@ -83,7 +83,7 @@
   height: 100vh;
   background-color: var(--yellow);
   justify-content: space-between;
-  gap: 30px;
+  padding: 30px;
 }
 
 .home_about-title{
@@ -92,7 +92,7 @@
   text-align: center;
 }
 
-.home_about-cardContainer{
+.about-cards{
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -105,21 +105,22 @@
   width: 60vw;
   border-radius: 5px;
   margin-left: 30px;
+  height: auto;
 }
 
-.home_about-card{
+.about-cardText{
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.home_about-card > span{
+.about-cardText > span{
   font-size: 2rem;
   font-weight: 700;
 }
 
-.home_about-card > p{
-  font-size: 1.2rem;
+.about-cardText > p{
+  font-size: 1.6rem;
   max-width: 60vw;
 }
 
