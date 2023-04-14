@@ -1,0 +1,39 @@
+.policy-page{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--white);
+}
+
+.policy-questionCard{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px 0px 50px;
+  gap: 15px;
+}
+
+.policy-padding{
+  padding-top: 15vh;
+}
+
+.policy-paddingBottom{
+  padding-bottom: 10vh;
+}
+
+.policy-questionCard > span{
+  font-style: italic;
+  font-size: 1.4rem;
+  margin-top: -15px;
+}
+
+.policy-questionCard > h2{
+  font-size: 3.4rem;
+}
+
+.policy-questionCard > h1{
+  font-size: 4.5rem;
+}
+
+.policy-questionCard > p {
+  font-size: 1.8rem;
+}

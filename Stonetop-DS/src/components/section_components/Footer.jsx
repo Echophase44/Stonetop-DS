@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png"
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
     <footer className="footer-main">
       <img className="footer-logo" src={logo} alt="" />
       <span className="footer-text"> © 2020 by Stonetop Financial Solutions, LLC.</span>
-      <a className="footer-privacy" href="">Privacy Policy</a>
+      <NavLink className="footer-privacy" to="/privacypolicy">Privacy Policy</NavLink>
     </footer>
   )
 }
