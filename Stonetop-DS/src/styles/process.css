@@ -1,0 +1,85 @@
+.process-page{
+  display: flex;
+  flex-direction: column;
+}
+
+.process-bannerContainer{
+  display: flex;
+  height: 30vh;
+  background: linear-gradient(90deg, rgba(230,175,46,1) 0%, rgba(230,175,46,1) 54%, rgba(53,144,243,1) 100%);
+  justify-content: center;
+  align-items: end;
+}
+
+.process-bannerTitle{
+  font-size: 6rem;
+  padding-bottom: 25px;
+}
+
+.process-cardMain{
+  background-color: var(--white);
+  padding-bottom: 50px
+}
+
+.process-cardInfo{
+  font-size: 2rem;
+  padding: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.process-cardContainer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.process-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 275px;
+  width: 275px;
+  background-color: var(--white);
+  border-radius: 5px;
+  border: 3px solid var(--red)
+}
+
+.process-arrowImg{
+  max-width: 40px;
+  height: auto;
+}
+
+.process-checkImg{
+  max-width: 40px;
+  filter: invert(49%) sepia(36%) saturate(4743%) hue-rotate(194deg) brightness(102%) contrast(91%);
+}
+
+.process-card > h2{
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.process-card > span{
+  font-size: 1.4rem;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .process-cardMain{
+    height: 215vh;
+  }
+
+  .process-cardContainer{
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .process-arrowImg{
+    transform: rotate(90deg);
+    transition: .5s;
+  }
+}

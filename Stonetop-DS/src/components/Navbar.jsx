@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.png"
 import '../styles/navbar.css'
+import { Link, NavLink } from 'react-router-dom'
 
 function Navbar () {
   return(
@@ -10,10 +11,10 @@ function Navbar () {
         <span className="nav_title">Stonetop Financial Solutions</span>
       </div>
       <ul className="nav_links-container">
-        <li>HOME</li>
+        <Link to="/" >HOME</Link>
         <li>ABOUT US</li>
         <li>WHAT WE DO</li>
-        <li>THE PROCESS</li>
+        <NavLink to='process'>THE PROCESS</NavLink>
         <li>CONTACT US</li>
       </ul>
     </nav>

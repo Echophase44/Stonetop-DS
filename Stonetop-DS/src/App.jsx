@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Homepage/>} />
+        <Route index element={<Homepage/>} />
         <Route path="/process" element={<Process/>} />
       </Routes>
     </div>

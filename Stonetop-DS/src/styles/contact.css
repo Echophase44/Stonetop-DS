@@ -22,19 +22,20 @@
   top: 0;
   width: 40%;
   height: 100%;
-  background-color: rgb(72, 70, 62, .7);
+  background-color: rgb(72, 70, 62, .5);
   font-size: 4rem;
 }
 
 .contact-info{
-  color: var(--yellow)
+  color: var(--black)
 }
 
 .contact-info > h2{
-  color: var(--white)
+  color: var(--black)
 }
 
 .contact-logo{
+  padding-top: 30px;
   max-width: 100px;
   filter: invert(98%) sepia(20%) saturate(7370%) hue-rotate(190deg) brightness(129%) contrast(96%);
 }

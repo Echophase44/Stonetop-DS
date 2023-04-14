@@ -34,17 +34,18 @@
   gap: 15px;
   padding: 15px 30px;
   list-style: none;
-  font-size: 1.5rem;
-  color: var(--white)
 }
 
-.nav_links-container > li{
+.nav_links-container > *{
   padding: 5px 10px;
   border-left: 1px solid var(--red);
   transition: .3s;
+  color: var(--white);
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
- .nav_links-container > li:hover{
+ .nav_links-container > *:hover{
   background-color: var(--red);
   transition: .3s;
   cursor: pointer;
