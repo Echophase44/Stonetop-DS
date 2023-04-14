@@ -21,7 +21,7 @@ function Contact () {
 
           <div className="contact-addressContainer">
             <ul className="contact-contactList">
-              <li>675 West Indiantown Road, Suite 205, Jupiter, FL 33458​</li>
+              <li className="contact-center">675 West Indiantown Road, Suite 205, Jupiter, FL 33458​</li>
               <li><span>Email:</span>info@Stonetopsolutions.com</li>
               <li><span>Phone:</span>866-555-0435</li>
               <li><span>Hours:</span>Monday - Friday: 9AM-6PM EST</li>

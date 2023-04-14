@@ -14,7 +14,7 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
-  filter: invert(94%) sepia(10%) saturate(7291%) hue-rotate(333deg) brightness(94%) contrast(92%);
+  filter: invert(98%) sepia(20%) saturate(7370%) hue-rotate(190deg) brightness(129%) contrast(96%);
 }
 
 .home_title{
@@ -22,7 +22,7 @@
   position: absolute;
   bottom: 10px;
   right: 85px;
-  color: var(--white)
+  color: var(--yellow)
 }
 
 /* ######################### What We Do ###################### */
@@ -30,7 +30,7 @@
 .home_wwd-container{
   display: flex;
   justify-content: space-evenly;
-  border-top: 5px solid var(--blue);
+  border-top: 5px solid var(--red);
   margin-top: -5px;
   height: 60vh;
 }
@@ -134,7 +134,7 @@
 /* ######################### Footer ###################### */
 
 .footer-main{
-  height: 15vh;
+  height: 10vh;
   background-color: var(--black);
   display: flex;
   justify-content: center;
