@@ -1,14 +1,10 @@
-import React from "react";
-import heroImg from '../../assets/mainOffice.jpg'
-import Logo from "../../assets/logo.png"
+import React from "react"
+import { Parallax } from "react-parallax";
+import splashImg from '../../assets/mainOffice.jpg'
 
 function Hero () {
   return (
-    <section className="home_hero-container">
-        <img className="home_hero" src={heroImg} alt="Office" />
-        <img className="home_logo" src={Logo} alt="Company Logo" />
-        <div className="home_title">Stonetop Financial</div>
-    </section>
+    <Parallax speed={-50} className="home_hero" bgImage={splashImg} strength={250}></Parallax>
   )
 }
 
