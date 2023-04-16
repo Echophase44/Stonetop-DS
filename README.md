@@ -12,7 +12,5 @@ This was a project so I can get experience a few different tools and concepts su
 
 ## ToDo for MVP
 
-- Enable smooth scrolling for the nav links
-- Add Privacy Policy Page
 - Adjust "About" section - setup accordian for the cards
 - Nav transition
