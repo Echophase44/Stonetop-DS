@@ -3,7 +3,7 @@ import background from "../../assets/stoneBackground.jpg"
 
 function WhatWeDo () {
   return(
-    <section className="home_wwd-container">
+    <section className="home_wwd-container" id='wwd'>
       <div className="home_wwd-imgContainer">
         <img className="home-wwd-img" src={background} />
         <div className="home_wwd-imgOverlay"></div>

@@ -5,7 +5,7 @@ import backgroundImg from '../../assets/squareStones.jpg'
 
 function Contact () {
   return (
-    <section className="contact-background">
+    <section className="contact-background" id='contact'>
 
       <img className="contact-img" src={backgroundImg} />
       <div className="contact-imgOverlay"></div>

@@ -3,7 +3,7 @@ import girlThree from '../../assets/workingGirl3.jpg'
 
 function About(){
   return(
-    <section className="home_about-main">
+    <section className="home_about-main" id="about">
 
         <div className="about-cards"> 
           <h2 className="home_about-title">ABOUT</h2>
