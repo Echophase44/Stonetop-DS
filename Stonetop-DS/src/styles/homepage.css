@@ -86,7 +86,7 @@
   padding: 30px;
 }
 
-.home_about-title{
+.about-header{
   padding: 15px;
   font-size: 4.5rem;
   text-align: center;
@@ -95,39 +95,83 @@
 .about-cards{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
-.home_about-contentContainer{
+.about-contentContainer{
   display: flex;
-  padding: 15px;
+  flex-direction: column;
+  padding: 30px;
   background-color: var(--white);
   width: 60vw;
   border-radius: 5px;
-  margin-left: 30px;
   height: auto;
+  transition: all 0.4s ease;
 }
 
-.about-cardText{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.about-cardText > span{
-  font-size: 2rem;
+.about-cardTitle{
+  position: relative;
+  padding-right: 30px;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
-.about-cardText > p{
-  font-size: 1.6rem;
-  max-width: 60vw;
+.about-cardTitle::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+
+  background-image: url('../assets/substract.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transition: .5s ease;
 }
 
-.home_about-img{
+.about-contentContainer.open .about-cardTitle::after{
+  background-image: url('../assets/right-arrow.png');
+  transform: rotate(90deg);
+  transition: .8s ease;
+}
+
+.about-contentContainer .about-cardDefault{
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.4 ease;
+}
+
+.about-contentContainer.open .about-cardDefault{
+  margin-bottom: 15px;
+  max-height: 1000px;
+  transition: .8s ease;
+  opacity: 1;
+  font-size: 1.6rem;
+  padding-right: 20px;
+}
+
+.about-img{
   height: 100%;
   width: 30vw;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1000px){
+  .about-contentContainer{
+    width: 85vw;
+  }
+
+  .about-cardTitle{
+    font-size: 1.4rem;
+  }
+
+  .about-img{
+    display: none;
+  }
 }
 
 
