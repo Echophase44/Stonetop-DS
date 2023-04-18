@@ -62,11 +62,15 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
+
+  .nav_logo{
+    height: 45px;
+  }
 
   .nav_title{
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .nav-hamburger{
@@ -96,14 +100,13 @@
   
   .nav_links-container{
     position: fixed;
-    display: flex;
     right: -100%;
-    top: 13%;
+    top: 75px;
     flex-direction: column;
-    width: 25%;
+    width: 175px;
     transition: .3s;
     align-items: start;
-  
+    justify-content: space-between;
     background-color:var(--black);
   }
 
