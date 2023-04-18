@@ -13,7 +13,7 @@ import Footer from './section_components/Footer.jsx'
 function Homepage() {
   return (
     <>
-    <Navbar/>
+      <Navbar/>
       <Hero />
       <WhatWeDo />
       <About />

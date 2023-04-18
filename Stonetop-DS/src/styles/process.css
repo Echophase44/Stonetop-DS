@@ -69,13 +69,22 @@
 
 @media screen and (max-width: 1000px) {
   .process-cardMain{
-    height: 255vh;
+    height: 245vh;
+  }
+
+  .process-bannerTitle{
+    font-size: 3rem;
   }
 
   .process-cardContainer{
     flex-direction: column;
     align-items: center;
     gap: 25px;
+  }
+
+  .process-card{
+    height: 300px;
+    width: 300xp;
   }
 
   .process-arrowImg{

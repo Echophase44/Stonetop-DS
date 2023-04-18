@@ -90,6 +90,7 @@
   flex-direction: column;
   width: 20vw;
   padding: 15px;
+  gap: 15px;
 }
 
 .form-rightSide > label{
@@ -120,9 +121,13 @@ input:focus, textarea{
   outline: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .contact-info, .contact-darkerOverlay{
     display: none;
+  }
+
+  .contact-info > *{
+    font-size: 1rem;
   }
 
   .contact-contactList{
@@ -130,11 +135,15 @@ input:focus, textarea{
   }
 
   .contact-formContainer, .form-main{
-    width: 90vw;
+    width: 100vw;
     justify-content: space-evenly;
   }
 
   .form-rightSide{
-    width: 35vw;
+    width: 50vw;
+  }
+
+  .contact-addressContainer{
+    right:0;
   }
 }

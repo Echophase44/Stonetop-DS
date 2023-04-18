@@ -1,10 +1,19 @@
 import React from "react";
 import Logo from "../assets/logo.png"
 import '../styles/navbar.css'
+import { useState } from "react";
 import { Link, NavLink } from 'react-router-dom'
 import { Link as LinkScroll} from 'react-scroll'
 
 function Navbar () {
+
+  const [menuStatus, setMenuStatus] = useState(false);
+
+  function toggleMenu(){
+    setMenuStatus(!menuStatus)
+  }
+
+  console.log(menuStatus)
 
   return(
     <nav className="nav_navbar">
@@ -12,7 +21,7 @@ function Navbar () {
         <img className="nav_logo" src={Logo} alt="Company Logo" />
         <span className="nav_title">Stonetop Financial Solutions</span>
       </div>
-      <ul className="nav_links-container">
+      <ul className={"nav_links-container " + (menuStatus ? "active" : '')}>
         <li>
           <Link to="/" >HOME</Link>
         </li>
@@ -29,6 +38,11 @@ function Navbar () {
           <NavLink to='/process'>THE PROCESS</NavLink>
         </li>
       </ul>
+
+      <button 
+        className={"nav-hamburger " + (menuStatus ? "active" : '')}
+        onClick={toggleMenu}
+        ></button>
     </nav>
   )
 }

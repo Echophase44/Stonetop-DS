@@ -41,25 +41,23 @@ function About(){
       className={"about-contentContainer " + (content.open ? "open" : '')} 
       key={index}
       onClick={() => toggleCard(index)}
-      >
-        <span className="about-cardTitle">{content.title}</span>
-        <div className="about-cardDefault">
-          <p>{content.paraOne}</p>
-          <p>{content.paraTwo}</p>
-        </div>
+    >
+      <span className="about-cardTitle">{content.title}</span>
+      <div className="about-cardDefault">
+        <p>{content.paraOne}</p>
+        <p>{content.paraTwo}</p>
+      </div>
     </div>
   ))
 
   
 
   return(
-    <section className="home_about-main" id="about">
-
+    <section className="about-main" id="about">
         <div className="about-cards"> 
           <h2 className="about-header">ABOUT</h2>
           {aboutContent}
         </div>
-
         <img className="about-img" src={girlThree} alt="" />
     </section>
   )

@@ -56,3 +56,65 @@
   cursor: pointer;
   border-radius: 5px 5px 0px 0px;
 }
+
+.nav-hamburger{
+  display: none;
+}
+
+
+@media screen and (max-width: 800px){
+
+  .nav_title{
+    align-items: center;
+    font-size: 1.8rem;
+  }
+
+  .nav-hamburger{
+    position: fixed;
+    display: block;
+    height: 35px;
+    width: 35px;
+    right: 10px;
+    top: 30px;
+
+    border: none;
+    background: url('../assets/menu.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .nav-hamburger.active{
+    height: 30px;
+    width: 30px;
+
+    background: url('../assets/close.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .nav_links-container{
+    position: fixed;
+    display: flex;
+    right: -100%;
+    top: 13%;
+    flex-direction: column;
+    width: 25%;
+    transition: .3s;
+    align-items: start;
+  
+    background-color:var(--black);
+  }
+
+  .nav_links-container.active > li{
+    padding: 5px 10px;
+    transition: .3s;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .nav_links-container.active{
+    right: 0;
+  }
+}

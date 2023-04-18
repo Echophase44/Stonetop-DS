@@ -12,5 +12,4 @@ This was a project so I can get experience a few different tools and concepts su
 
 ## ToDo for MVP
 
-- Adjust "About" section - setup accordian for the cards
 - Nav transition

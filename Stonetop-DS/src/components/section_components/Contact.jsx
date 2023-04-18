@@ -29,7 +29,7 @@ function Contact () {
 
           <div className="contact-formContainer">
             <form className="form-main" action="">
-              <div className="form-rightSide">
+              <div className="form-leftSide">
                 <label htmlFor="firstName">First Name *</label>
                 <input type="text" id="firstName" name="firstName" placeholder="First Name"/>
 
@@ -39,9 +39,10 @@ function Contact () {
                 <label htmlFor="subject">Subject *</label>
                 <input type="text" id="subject" name="subject" placeholder="Give your message a title"/>
               </div>
-              <div className="form-leftSide">
+              <div className="form-rightSide">
                 <label htmlFor="message">Message *</label>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button type="button">Submit</button>
               </div>
             </form>
           </div>
