@@ -2,7 +2,6 @@
   position: relative;
   height: 100vh;
   object-fit: fill;
-  /* display: block; */
   background-size: cover;
   background-attachment: fixed;
 }
@@ -18,7 +17,6 @@
 @media screen and (max-width: 1010px) {
   .home_hero{
     height: 78vh;
-    /* backround-size: cover; */
   }
 }
 
@@ -41,7 +39,7 @@
 
 @media screen and (max-width: 644px){
   .home_hero{
-    height: 39vh;
+    height: 31vh;
   }
 }
 
@@ -106,7 +104,7 @@
 
 @media screen and (max-width: 644px){
   .home_wwd-text{
-   font-size: .9rem;
+   font-size: 1.1rem;
   }
 
   .home_wwd-title{

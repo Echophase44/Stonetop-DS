@@ -113,7 +113,7 @@
   .nav_links-container.active > li{
     padding: 5px 10px;
     transition: .3s;
-    font-size: 1rem;
+    font-size: 1.4rem;
     text-decoration: none;
   }
 
