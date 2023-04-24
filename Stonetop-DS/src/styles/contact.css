@@ -59,8 +59,9 @@
   justify-content: space-between;
   width: 45vw;
   height: 50vh;
-  background-color: var(--red);
+  background-color: var(--white);
   border-radius: 3px;
+  border: 3px solid var(--red);
 }
 
 .contact-contactList{
@@ -106,6 +107,15 @@
   padding-top: 30px;
 }
 
+.form-leftSide > label{
+  padding-top: 15px;
+}
+
+.form-leftSide > input {
+  width: 250px;
+  height: 30px;
+}
+
 textarea{
   height: 200px;
   width: 100%;
@@ -119,6 +129,25 @@ label{
 
 input:focus, textarea{
   outline: none;
+}
+
+.form-rightSide > button {
+  font-size: 1.8rem;
+  color: var(--white);
+  background-color: var(--red);
+  transition: .4s;
+}
+
+.form-rightSide > button:hover{
+  background-color: var(--white);
+  color: var(--red);
+  cursor: pointer;
+}
+
+.form-leftSide > input, .form-rightSide > textarea, .form-rightSide > button  {
+  outline: none;
+  border: 2px solid var(--red);
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 750px) {
